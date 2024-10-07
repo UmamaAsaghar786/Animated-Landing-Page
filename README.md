@@ -20,9 +20,7 @@ Check out the live demo here!
 
 📂 Installation
 Clone the repository:
-bash
-Copy code
-git clone https://github.com/your-username/responsive-animated-landing-page.git
+https://github.com/UmamaAsaghar786/Animated-Landing-Page.git
 Open index.html in your preferred browser.
 🙌 Contributions
 Contributions, suggestions, and ideas to improve this project are always welcome!
