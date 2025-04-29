@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cooper ltbt;
+}
+html, body{
+    height: 100vh;
+    width: 100vw;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.nav-bar{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 13vh;
+    top: 0;
+}
+.part-1{
+    font-size: 20px;
+    padding-left: 3vw;
+}
+.part-2{
+    display: flex;
+    gap: 3vw;
+    padding-right: 2vw;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size:22px ;
+    padding-top: 1vh;
+}
+
+a:hover{
+    text-decoration: underline;
+    text-decoration-color:rgb(0, 235, 143) ;
+    text-decoration-thickness: 3px;
+}
+
+/* Targets all <button> elements */
+button {
+    /* Sets a horizontal gradient from left to right:
+       - First 50%: Solid color (#ff5733 = orange-red)
+       - Second 50%: Transparent (invisible) */
+    background: linear-gradient(to right,rgb(0, 235, 143) 50%, transparent 50%);
+  
+    /* Scales the background to 200% width (double the button width)
+       - Allows the gradient to be "shifted" later */
+    background-size: 200% 100%;
+  
+    /* Positions the gradient to show ONLY the transparent half initially
+       - Pushes the colored half (#ff5733) out of view */
+    background-position: right;
+  
+    /* Smoothly animates:
+       - background-position (for the sliding effect)
+       - color (for text color change)
+       over 0.4 seconds with "ease" timing */
+    transition: background-position 0.4s ease, color 0.4s ease;
+    border-radius: 25px;
+    width: 12vw;
+    height: 6vh;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /* Styles applied when hovering over the button */
+  button:hover {
+    /* Shifts the gradient to show the colored half (#ff5733)
+       - Slides the background from right to left */
+    background-position: left;
+  
+    /* Changes text color to white on hover */
+    color: white;
+  }
+  .main>h1{
+    font-size: 5.5vw;
+    font-weight: 100;
+    text-transform: capitalize;
+    text-align: center;
+    position: relative;
+    width: 60vw;
+    z-index: 1;
+  }
+  .main>h2{
+    text-align: center;
+    position: absolute;
+    bottom: 25vh;
+    font-size: 30px;
+  }
+  .main>h1::after{
+    content: "";
+    position: absolute;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    background-size: cover;
+    width: 20vw;
+    height: 16px;
+    bottom: -5%;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+  .img1{
+    height: 60vh;
+    width: 20vw;
+    top: 25vh;
+    left: 5vw;
+  }
+  .img2{
+    height: 34vh;
+    width: 19vw;
+    top: 20vh;
+    right: 25vw;
+  }
+  .img3{
+    height: 36vh;
+    width: 18vw;
+    right: 8vw;
+    bottom: 13vh;
+  } 
+.main img{
+    transition: margin 0.4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+img:hover{
+    margin-top: -30px;
+}
+.b1{
+  width: 6vw;
+}
+.hero-section{
+  height: 20vh;
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
